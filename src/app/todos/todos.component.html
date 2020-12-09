@@ -1,13 +1,14 @@
-<div class="jasmine-bar">
-  <ul class="jasmine-title">
-    <li class="jasmine-trigger" *ngFor="let article of articles">
-      <a class="jasmine-title">
-        <p>{{article.header}}</p>
+<div class="sidebar-wrapper">
+  <ul class="nav">
+    <li class="nav-item active" *ngFor="let article of articles">
+      <a class="nav-link">
+        <span>{{article.header}}</span>
       </a>
 
     </li>
   </ul>
 </div>
+
 <ul>
   <li *ngFor="let article of article; let i = index">
     <span>
