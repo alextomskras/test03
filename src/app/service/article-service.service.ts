@@ -12,4 +12,11 @@ export class ArticleServiceService {
   getArticles(): Article[] {
     return TestData.articles;
   }
+
+  getArticlesByID(id: Article[]): Article[] {
+    // tslint:disable-next-line:no-shadowed-variable
+
+    // @ts-ignore
+    return TestData.articles.filter(article => article.id === id);
+  }
 }

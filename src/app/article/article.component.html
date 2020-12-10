@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let article of article; let i = index">
+    <span>
+    <strong>{{i + 1}}</strong>
+      {{article.header}}
+    </span>
+    <small>{{article.description}}</small>
+  </li>
+</ul>
